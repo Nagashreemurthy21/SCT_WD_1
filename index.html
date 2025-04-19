@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCraft Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SkillCraft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero" style="background-image: url('https://via.placeholder.com/1500');">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 class="display-4 fw-bold typewriter-text">Welcome to SkillCraft Technology</h1>
+            <p class="lead mt-3">Crafting innovative digital solutions to help your business thrive in the digital age.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Our Features</h2>
+                <p class="text-muted">Empowering businesses with cutting-edge technology solutions</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card p-4 text-center reveal">
+                        <h4>AI Solutions</h4>
+                        <p>Transforming industries with powerful Artificial Intelligence solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4 text-center reveal">
+                        <h4>Custom Development</h4>
+                        <p>Building custom software tailored to your unique business needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4 text-center reveal">
+                        <h4>Creative UI/UX</h4>
+                        <p>Delivering stunning designs that provide exceptional user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container text-center">
+            <h2>About SkillCraft Technology</h2>
+            <p class="mt-3">At SkillCraft, we’re a dedicated team of developers, designers, and tech enthusiasts driven to deliver intelligent and innovative digital solutions. From software development to creating captivating user experiences, we work closely with businesses to create products that are not only functional but also impactful. With years of expertise in cutting-edge technology, we’re here to shape the future of your business.</p>
+        </div>
+    </section>
+
+    <button id="scrollToTop" class="scroll-to-top">&#8679;</button>
+
+    <footer>
+        <p>&copy; 2025 SkillCraft Technology. All rights reserved.</p>
+        <p>Follow us on <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
