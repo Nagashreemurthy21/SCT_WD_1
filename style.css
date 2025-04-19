@@ -1,0 +1,159 @@
+:root {
+    --fg: #ffffff;
+    --accent: #ff6f61;
+    --highlight: #00ffff;
+    --primary-bg: #0f2027; /* Dark background for hero */
+    --gradient-1: linear-gradient(135deg, #ff6f61, #ff4081); /* Soft gradient */
+    --gradient-2: linear-gradient(135deg, #00bcd4, #8e24aa); /* Vibrant gradient */
+    --card-bg: #2d2d2d; /* Dark gray for cards */
+    --primary-color: #ff4081; /* Pink */
+    --secondary-color: #00bcd4; /* Cyan */
+    --tertiary-color: #8e24aa; /* Purple */
+    --footer-bg: #1a1a1a; /* Dark background for footer */
+    --about-bg: #f1f1f1; /* Light gray for About section */
+    --feature-card-bg: #282828; /* Darker background for feature cards */
+    --hero-overlay: rgba(0, 0, 0, 0.5); /* Darker overlay for hero */
+    --navbar-gradient: linear-gradient(90deg, #00bcd4, #ff4081); /* Gradient for navbar */
+}
+
+body {
+    background-color: var(--fg);
+    color: var(--fg);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+
+.navbar {
+    transition: background-color 0.3s;
+    background: var(--navbar-gradient); /* Gradient background for navbar */
+}
+
+.navbar.scrolled {
+    background-color: var(--tertiary-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--highlight) !important;
+    font-weight: 700;
+}
+
+.hero {
+    height: 100vh;
+    background: var(--primary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--hero-overlay);
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Reduced font size */
+    background: -webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Ensure no text overflow */
+    text-overflow: ellipsis; /* Handle long text gracefully */
+}
+
+.feature-card {
+    background: var(--feature-card-bg);
+    border: none;
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 111, 97, 0.9);
+    background-color: #ff8757;
+    font-weight: 700;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.typewriter-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--highlight);
+    width: 0;
+    animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 900;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.about-section {
+    background: var(--about-bg);
+    padding: 60px 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-section h2 {
+    color: var(--tertiary-color);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
